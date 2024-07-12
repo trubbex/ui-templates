@@ -6203,13 +6203,18 @@ body.night-mode .lightbox-data {
   cursor: pointer;
 }
 
-.add-story .img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  border-radius: 16px;
+.add-story {
+  position: relative;
+  display: inline-block;
+  width: 110px; /* Make width and height equal to create a circle */
+  height: 110px; /* Updated to match width for a circular shape */
+  border-radius: 50%; /* Ensures the shape is circular */
+  margin-bottom: 25px;
+  cursor: pointer;
+  overflow: hidden; /* Ensures any child elements fit within the circle */
+  background-color: #ccc; /* Optional: background color or image */
+}
+
 }
 
 .add-story .add {
